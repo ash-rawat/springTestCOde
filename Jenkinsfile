@@ -1,6 +1,9 @@
-pipeline{
+peline{
     agent {
         label 'vm2'
+    }
+    tools {
+        git 'vm2-git'
     }
     stages{
         stage('Maven Build'){
