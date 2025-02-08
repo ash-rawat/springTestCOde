@@ -1,6 +1,6 @@
 peline{
     agent {
-        label 'vm2'
+        label 'node2'
     }
     stages{
         stage('Maven Build'){
