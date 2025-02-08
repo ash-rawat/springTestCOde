@@ -5,8 +5,8 @@ pipeline{
     stages{
         stage('Maven Build'){
             steps{
-                sh "echo Adarsh"
-                // sh "mvn clean install"
+                sh "mvn --version"
+                sh "mvn clean install"
             }
         }
     }
