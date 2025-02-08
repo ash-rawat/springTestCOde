@@ -1,5 +1,7 @@
 pipeline{
-    agent 'vm'
+    agent {
+        label 'vm2'
+    }
     stages{
         stage('Maven Build'){
             steps{
