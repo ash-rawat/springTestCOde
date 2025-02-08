@@ -1,6 +1,9 @@
 pipeline{
     agent {
-        label 'node2'
+        docker {
+            image "maven:3.6.0-jdk-13"
+            label "node2"
+        }
     }
     stages{
         stage('Maven Build'){
